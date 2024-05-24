@@ -6,17 +6,120 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Creating a login page-->
     <h1>Please Logint to continue</h1>
+    <form action="https://github.com/ayshman453" target="_blank">
+        
+        <label for ="Username">Username:</label>
+        <input type="text" id="Username"/>
+        <br/>
+        <label for ="Password">Password:  </label>
+        <input type="password" id="Password"/>
+        <br/>
+        <input type="submit" id="Submit"/> 
+
+    </form>
+        
+    <br/>
+    <hr/>
+    <br/>
+
+    
+    <!--Creating a Nested Table-->
+    <style>
+        table,tr,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        thead{background-color: aqua;}
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <td>Device</td>
+                <td>Brand</td>
+                <td>Specifications</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smartphone</td>
+                <td>Apple</td>
+                <td>
+                    <table><tr style="background-color: darkkhaki;">
+                        <td>Model</td>
+                        <td>Storage</td>
+                    </tr>
+                    <tr>
+                        <td>iphone 12 Pro</td>
+                        <td>256 GB</td>
+                    </tr>
+                    <tr>
+                        <td>iPhone SE</td>
+                        <td>128 GB</td>
+                    </tr></table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>HP</td>
+                <td>15.6" Display</td>
+            </tr>
+            <tr>
+                <td>Tablet</td>
+                <td>Samsung</td>
+                <td>10.2" Display</td>
+            </tr>
+        </tbody>
+    </table><br/><br/>
+
     <table>
         <tr>
-            <td><label for ="Username">Username:</label></td>
-            <td><input type="text" name="Username"/></td>
+            <td rowspan="2">State of health</td>
+            <td colspan="2">Fasting value</td>
+            
+            <td>After Eating</td>
         </tr>
         <tr>
-            <td><label for ="UPassword">Password:</label></td>
-            <td><input type="text" name="Password"/></td>
+            
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hrs after eating</td>
         </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>more than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>
+        
     </table>
-    <button>submit</button>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
+
+
+
+
